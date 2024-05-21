@@ -49,21 +49,37 @@ body {
 .main-content {
     flex-grow: 1;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #c2c2c2;
     display: flex;
     flex-direction: column;
 }
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+
     background-color: white;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
-
+.headerUp{
+display: flex;
+justify-content: space-between;
+}
+.update-block button{
+    background-color: #007bff;
+    border-radius: 19px;
+    font-size: medium;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+}
+.headerDown{
+    display: flex;
+    justify-content: space-between;
+}
 .search-bar input {
     padding: 10px;
     border: 1px solid #ccc;
@@ -92,7 +108,9 @@ header {
     border-radius: 50%;
     margin-right: 10px;
 }
-
+.centerComponent{
+    display: flex;
+}
 .projects {
     margin-bottom: 20px;
 }
@@ -112,6 +130,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-left: 10px solid rgb(255, 233, 31);
 }
 
 .project-card h3 {
@@ -125,7 +144,7 @@ header {
     margin-top: 10px;
 }
 
-.announcements {
+ .announcementsList {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -133,9 +152,27 @@ header {
     width: 300px;
     margin-left: 20px;
 }
+.announcements{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.announcements h2 {
+    padding-top: 20px;
+}
+
+.trendingList{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin-left: 20px;
+}
 
 .announcements h2 {
     margin-top: 0;
+    margin-left: 24px;
 }
 
 .announcements ul {

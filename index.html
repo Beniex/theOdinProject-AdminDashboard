@@ -20,6 +20,8 @@
                     <li><span class="icon">&#128197;</span> History</li>
                     <li><span class="icon">&#128221;</span> Tasks</li>
                     <li><span class="icon">&#128101;</span> Communities</li>
+                </ul>
+                <ul>    
                     <li><span class="icon">&#9881;</span> Settings</li>
                     <li><span class="icon">&#10067;</span> Support</li>
                     <li><span class="icon">&#128274;</span> Privacy</li>
@@ -28,27 +30,41 @@
         </aside>
         <main class="main-content">
             <header>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search...">
+                <div class="headerUp">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="user-info">
+                        <span class="notification">&#128276;</span>
+                        <div class="user">
+                            <img src="user-avatar.png" alt="User Avatar">
+                            <span>Morgan Oakley</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="user-info">
-                    <span class="notification">&#128276;</span>
-                    <div class="user">
+                <div class="headerDown">
+                    <div class="UserMain">
                         <img src="user-avatar.png" alt="User Avatar">
-                        <span>Morgan Oakley</span>
+                        <div id="userMainDescription">Hi there, Morgan Oakley (@morgan)</div>
+                    </div>
+                    <div class="update-block">
+                        <button id="new">New</button>
+                        <button id="upload">Upload</button>
+                        <button id="share">Share</button>        
                     </div>
                 </div>
             </header>
-            <section class="projects">
-                <h2>Your Projects</h2>
-                <div class="project-cards">
-                    <div class="project-card">
-                        <h3>Super Cool Project</h3>
-                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
-                        <div class="card-actions">
-                            <span class="icon">&#9733;</span>
-                            <span class="icon">&#128065;</span>
-                            <span class="icon">&#128393;</span>
+            <div class="centerComponent">
+                <section class="projects">
+                    <h2>Your Projects</h2>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h3>Super Cool Project</h3>
+                            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                            <div class="card-actions">
+                                <span class="icon">&#9733;</span>
+                                <span class="icon">&#128065;</span>
+                                <span class="icon">&#128393;</span>
                         </div>
                     </div>
                     <div class="project-card">
@@ -97,22 +113,31 @@
                         </div>
                     </div>
                 </div>
-            </section>
+                </section>
             <aside class="announcements">
+                <div class="announcementsBlock">
                 <h2>Announcements</h2>
+                <div class="announcementsList">
                 <ul>
-                    <li>Site Maintenance</li>
-                    <li>Community Share Day</li>
-                    <li>Updated Privacy Policy</li>
+                    <li>Site Maintenance : raesent convallis, libero quis congue elementum, nunc ante </li>
+                    <li>Community Share Day : raesent convallis, libero quis congue elementum, nunc ante </li>
+                    <li>Updated Privacy Policy : raesent convallis, libero quis congue elementum, nunc ante </li>
                 </ul>
+                </div>
+                </div>
+                <div class="trendingBlock">
                 <h2>Trending</h2>
+                <div class="trendingList">
                 <ul>
                     <li><span class="icon">&#128100;</span> @tegan: World Peace Builder</li>
                     <li><span class="icon">&#128100;</span> @morgan: Super Cool Project</li>
                     <li><span class="icon">&#128100;</span> @kendall: Life Changing App</li>
                     <li><span class="icon">&#128100;</span> @alex: No Traffic Maker</li>
                 </ul>
+                </div>
+                </div>
             </aside>
+            </div>
         </main>
     </div>
     <script src="script.js"></script>
